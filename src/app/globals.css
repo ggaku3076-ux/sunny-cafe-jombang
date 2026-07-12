@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  
+  /* Brand color tokens (Pink & White only, no gradients) */
+  --brand-pink: #db2777;       /* Dark pink for high-contrast text and buttons with white text */
+  --brand-pink-light: #f472b6; /* Vibrant pink for highlights/borders with dark text */
+  --brand-pink-bg: #fff5f7;    /* Soft pink-white tint for alternate sections */
+  --brand-dark: #121212;
+  --brand-light: #ffffff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-brand-pink: var(--brand-pink);
+  --color-brand-pink-light: var(--brand-pink-light);
+  --color-brand-pink-bg: var(--brand-pink-bg);
+  --color-brand-dark: var(--brand-dark);
+  --color-brand-light: var(--brand-light);
+  
+  --font-sans: var(--font-plus-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --font-nunito: var(--font-nunito), sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, monospace;
+  --font-satisfy: 'Satisfy', cursive;
+  --font-oswald: 'Oswald', sans-serif;
+}
+
+body {
+  background-color: var(--brand-light);
+  color: var(--brand-dark);
+  font-family: var(--font-sans);
+}
+
+/* Custom scrollbar matching our theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--brand-light);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--brand-pink);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--brand-pink-light);
+}
+
+/* Accessibility focus styles */
+*:focus-visible {
+  outline: 2px solid var(--brand-pink-light);
+  outline-offset: 2px;
+}
