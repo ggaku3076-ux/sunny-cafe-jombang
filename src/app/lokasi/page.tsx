@@ -49,7 +49,7 @@ export default function LokasiPage() {
                   <div>
                     <h3 className="font-bold text-brand-dark text-sm">Nomor Telepon & WhatsApp</h3>
                     <p className="text-sm text-brand-dark/70 mt-1">
-                      <a href="tel:+6282231144930" className="hover:text-brand-pink transition-colors">
+                      <a href="tel:+6281334783101" className="hover:text-brand-pink transition-colors">
                         0813-3478-3101
                       </a>
                     </p>
@@ -139,7 +139,7 @@ export default function LokasiPage() {
               </a>
 
               <a
-                href="https://wa.me/6282231144930"
+                href="https://wa.me/6281334783101"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full inline-flex items-center justify-center gap-2 rounded border border-brand-dark/20 bg-white py-3.5 text-sm font-semibold text-brand-dark hover:border-brand-pink hover:text-brand-pink transition-colors duration-200"
